@@ -10,7 +10,7 @@ namespace BarberMaterialTweaks
     [BepInPlugin(PLUGIN_GUID, PLUGIN_NAME, PLUGIN_VERSION)]
     public class Plugin : BaseUnityPlugin
     {
-        const string PLUGIN_GUID = "dopadream.lethalcompany.BarberMaterialTweaks", PLUGIN_NAME = "BarberMaterialTweaks", PLUGIN_VERSION = "1.0.0";
+        const string PLUGIN_GUID = "dopadream.lethalcompany.BarberMaterialTweaks", PLUGIN_NAME = "BarberMaterialTweaks", PLUGIN_VERSION = "1.1.0";
         internal static new ManualLogSource Logger;
         internal static Material clayTex;
 
@@ -24,7 +24,7 @@ namespace BarberMaterialTweaks
             try
             {
                 AssetBundle barberBundle = AssetBundle.LoadFromFile(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "BarberMaterialTweaks"));
-                clayTex = barberBundle.LoadAsset("ScissorGuyTex", typeof(Material)) as Material;
+                clayTex = barberBundle.LoadAsset("ScissorGuyTex 1", typeof(Material)) as Material;
                 barberBundle.Unload(false);
             }
             catch
