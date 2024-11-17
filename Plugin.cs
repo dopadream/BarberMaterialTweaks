@@ -8,9 +8,10 @@ using UnityEngine;
 namespace BarberMaterialTweaks
 {
     [BepInPlugin(PLUGIN_GUID, PLUGIN_NAME, PLUGIN_VERSION)]
+    [BepInIncompatibility("dopadream.lethalcompany.ClaySurgeonMod")]
     public class Plugin : BaseUnityPlugin
     {
-        const string PLUGIN_GUID = "dopadream.lethalcompany.BarberMaterialTweaks", PLUGIN_NAME = "BarberMaterialTweaks", PLUGIN_VERSION = "1.1.0";
+        const string PLUGIN_GUID = "dopadream.lethalcompany.BarberMaterialTweaks", PLUGIN_NAME = "BarberMaterialTweaks", PLUGIN_VERSION = "1.1.1";
         internal static new ManualLogSource Logger;
         internal static Material clayTex;
 
